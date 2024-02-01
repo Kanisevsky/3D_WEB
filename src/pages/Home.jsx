@@ -1,6 +1,7 @@
 import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import Loader from '../components/Loader'
+import Island from '../models/Island'
 const Home = () => {
   return (
     <section className="w-full h-screen relative">
@@ -17,6 +18,7 @@ const Home = () => {
           <pointLight />
           <spotLight />
           <hemisphereLight />
+          <Island />
         </Suspense>
       </Canvas>
     </section>
