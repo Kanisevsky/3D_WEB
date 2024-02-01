@@ -34,12 +34,12 @@ const Home = () => {
             groundColor="#000000"
             intensity={1}
           />
+          <Sky />
           <Island
             position={islandPosition}
             scale={islandScale}
             rotation={screenRotation}
           />
-          <Sky />
         </Suspense>
       </Canvas>
     </section>

@@ -4,9 +4,9 @@ import skyScene from '../assets/3d/sky.glb'
 function Sky() {
   const sky = useGLTF(skyScene)
   return (
-    <div>
-      <mesh></mesh>
-    </div>
+    <mesh>
+      <primitive object={sky.scene} />
+    </mesh>
   )
 }
 
