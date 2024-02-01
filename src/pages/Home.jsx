@@ -2,6 +2,7 @@ import { Suspense } from 'react'
 import { Canvas } from '@react-three/fiber'
 import Loader from '../components/Loader'
 import Island from '../models/Island'
+import Sky from '../models/Sky'
 const Home = () => {
   const adjustIslandForScreenSize = () => {
     let screenScale = null
@@ -38,6 +39,7 @@ const Home = () => {
             scale={islandScale}
             rotation={screenRotation}
           />
+          <Sky />
         </Suspense>
       </Canvas>
     </section>
