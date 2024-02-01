@@ -11,7 +11,13 @@ const Home = () => {
         className="w-full bg-transparent h-screen"
         camera={{ near: 0.1, far: 1000 }}
       >
-        <Suspense fallback={<Loader />}></Suspense>
+        <Suspense fallback={<Loader />}>
+          <directionalLight />
+          <ambientLight />
+          <pointLight />
+          <spotLight />
+          <hemisphereLight />
+        </Suspense>
       </Canvas>
     </section>
   )
