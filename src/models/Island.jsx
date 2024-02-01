@@ -13,7 +13,7 @@ import { a } from '@react-spring/three'
 import IslandScene from '../assets/3d/island.glb'
 
 const Island = (props) => {
-  const { nodes, materials } = useGLTF('/island.glb')
+  const { nodes, materials } = useGLTF(IslandScene)
   const islandRef = useRef()
   return (
     <a.group {...props} ref={islandRef}>
